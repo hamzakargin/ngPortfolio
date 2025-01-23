@@ -1,0 +1,18 @@
+.mat-grid-list {
+  display: flex;
+  flex-direction: column; /* Dikey düzenleme (fxLayout="columns") */
+  justify-content: center; /* Yatayda ortalama (fxLayoutAlign="center center") */
+  align-items: center; /* Dikeyde ortalama */
+  height: 100vh; /* Tam ekran yüksekliği */
+}
+.form {
+  display: flex;
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+}
+button {
+  display: flex;
+  justify-content: center; /* Butonu yatayda ortala */
+  width: 100%; /* Tam genişlik */
+  max-width: 200px;
+}

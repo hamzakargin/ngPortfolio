@@ -1,0 +1,30 @@
+<section class="loginForm">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <mat-grid-list cols="1" rowHeight="fit">
+      <mat-form-field class="form">
+        <input
+          type="email"
+          matInput
+          placeholder="Your email"
+          ngModel
+          name="email"
+          email
+          required
+        />
+      </mat-form-field>
+      <mat-form-field class="form">
+        <input
+          type="password"
+          matInput
+          placeholder="Your password"
+          ngModel
+          name="password"
+          required
+          minlength="5"
+        />
+        <mat-hint align="end">min 6 character</mat-hint>
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="primary">Login</button>
+    </mat-grid-list>
+  </form>
+</section>

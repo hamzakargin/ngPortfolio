@@ -1,0 +1,7 @@
+mat-toolbar {
+  background-color: cornflowerblue;
+}
+mat-toolbar {
+  display: flex;
+  align-items: center; /* Dikeyde ortalamak */
+}
