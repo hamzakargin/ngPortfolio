@@ -1,1 +1,18 @@
-<p>new-training works!</p>
+<section class="new-training">
+  <mat-card appearance="outlined">
+    <mat-card-title>Time to go gym</mat-card-title>
+    <mat-card-content>
+      <mat-form-field>
+        <mat-select placeholder="Favorite gym">
+          <mat-option value=""> Chrunches </mat-option>
+          <mat-option value="Touch toes"> Touch toes </mat-option>
+          <mat-option value="Bench press"> Bench press </mat-option>
+          <mat-option value="Incline bench press">Incline Bench</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button type="submit" mat-button (click)="onStartGym()">Start</button>
+    </mat-card-actions>
+  </mat-card>
+</section>

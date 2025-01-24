@@ -1,0 +1,47 @@
+/* Ana section için stil */
+.new-training {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  top: -60px; /* Kartı yukarı taşır */
+}
+
+/* Kart düzenlemesi */
+mat-card {
+  width: 100%; /* Kartın genişliği ekran boyutuna göre ayarlanır */
+  max-width: 400px; /* Maksimum genişlik */
+  padding: 16px; /* İçerik kenar boşluğu */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  border-radius: 8px; /* Köşelerin yuvarlanması */
+}
+mat-card-title {
+  text-align: center; /* Yatayda ortalama */
+  font-size: 1.5rem; /* Daha büyük yazı boyutu */
+  font-weight: bold;
+  margin-bottom: 16px; /* Alttan boşluk */
+}
+/* Form alanlarının düzeni */
+mat-form-field {
+  width: 100%;
+}
+
+/* Düğme düzeni */
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end; /* Butonu sağa hizala */
+}
+
+/* Mobil için media query */
+@media (max-width: 600px) {
+  mat-card {
+    padding: 12px;
+  }
+
+  mat-card-title {
+    font-size: 1.2rem; /* Daha küçük başlık boyutu */
+  }
+}

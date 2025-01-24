@@ -3,10 +3,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListItem, MatListModule, MatNavList } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav-list',
   imports: [
+    RouterLink,
     MatSidenavModule,
     MatListItem,
     MatIconModule,
