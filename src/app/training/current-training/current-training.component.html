@@ -1,1 +1,15 @@
-<p>current-training works!</p>
+<section class="current-training">
+  <mat-progress-spinner
+    mode="determinate"
+    [value]="progress"
+  ></mat-progress-spinner>
+  <h1>{{ progress }}%</h1>
+  <p>You have completed 50% of your current training program.Keep going</p>
+  <button
+    mat-raised-button
+    style="background-color: #ff4081; color: white"
+    (click)="onStop()"
+  >
+    Stop
+  </button>
+</section>

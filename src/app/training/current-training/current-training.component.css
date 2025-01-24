@@ -1,0 +1,60 @@
+/* Genel stil */
+.current-training {
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+mat-progress-spinner {
+  margin: 20px auto;
+  display: block;
+  max-width: 100px; /* Progress spinner boyutu */
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0 20px;
+}
+
+button {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #d81b60; /* Hover durumu */
+  transform: scale(1.05); /* Hover ile butonu büyütme */
+}
+
+/* Mobil cihazlar için responsive stil */
+@media (max-width: 600px) {
+  .current-training {
+    padding: 10px;
+  }
+
+  mat-progress-spinner {
+    max-width: 80px; /* Progress spinner boyutunu küçültme */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
